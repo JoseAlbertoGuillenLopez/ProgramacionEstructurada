@@ -1,4 +1,4 @@
-peliculas=["JUAN","JUANO","DICK","JUAN"]
+peliculas=["JUAN","JUANO","ALB","JUAN"]
 
 def borrarPantalla():
   import os  

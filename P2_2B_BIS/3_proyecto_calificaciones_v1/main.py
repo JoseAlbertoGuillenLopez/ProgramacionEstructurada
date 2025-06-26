@@ -9,10 +9,11 @@ import os
 import calificaciones
 
 def main():
-    #import os
-    #import calificaciones
     
-    datos=[]
+    datos=[
+        ["RUBEN",1.0,2.0,3.0],
+        ["JUAN",7.0,8.0,9.0]
+    ]
 
     opcion=True
     while opcion:
@@ -26,12 +27,15 @@ def main():
                 calificaciones.mostrar_calificaciones(datos)
                 calificaciones.esperarTecla()   
             case "3":            
-                calificaciones.calcular_promedios(datos)
+                calificaciones.calcular_promedios1(datos)
                 calificaciones.esperarTecla()           
             case "4":         
+                calificaciones.buscarAlumno(datos)
+                calificaciones.esperarTecla()  
+            case "5":         
                 opcion=False    
                 calificaciones.borrarPantalla()
-                print("\n\tTerminaste la ejecucion del SW")
+                print("\n\t 🚪.::Terminaste la ejecucion del SW::.🚪")
             case _:           
                 input("\n\tOpción invalida vuelva a intentarlo ... por favor")
 
